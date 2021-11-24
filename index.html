@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Pierwsze Javy</title>
+</head>
+<body>
+
+ <h1 id="sentence">
+     Lorem ipsum dolor sit amet, 
+    consectetur adipisicing elit. 
+    A, corporis nemo ex possimus quo commodi
+     molestiae qui quas laborum repudiandae. 
+     Reprehenderit aliquam, quis minus accusamus
+      officiis sit dolorum necessitatibus unde.
+ </h1>
+
+ <script>
+
+    var sentenceNode = document.getElementById("sentence");
+    var sentence = sentenceNode.innerText;
+
+    var upperSentence = sentence.toUpperCase()
+    var lowerSentence = sentence.toLocaleLowerCase()
+    var firstelevenchars = sentence.substr(0, 11)
+
+    var allWords = sentence.split(" ")
+    var bracketWords = "(" + allWords.join("======") + ")"
+    var firstThreeWords = allWords.slice(0,3)
+
+    var middlewords = allWords.slice(5,10)
+    var makeSentence = middlewords.join(" ")
+
+    sentenceNode.innerText = makeSentence
+ </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
